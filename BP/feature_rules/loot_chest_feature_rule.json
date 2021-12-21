@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "minecraft:loot_chest_feature_rule",
+			"places_feature": "minecraft:loot_chest_mcstructure"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": [
+				{
+                    "any_of": [
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "overworld_generation"
+						}
+					]			
+                }
+			]
+		},
+		"distribution": {
+			"iterations": 1,
+			"scatter_chance": 0.90,
+			"x": 0,
+			"y": "query.heightmap(variable.worldx, variable.worldz) - 2",
+			"z": 0
+		}
+	}
+}
