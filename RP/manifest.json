@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Asher & Christopher Book"
+		]
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "8ba3a93e-380d-486d-bfd5-3186cdfd53d2",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "dba7459b-bfca-40a8-91a3-ed4c97347d25",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "4c8e7935-55e6-403b-837b-783be5f1cc7c",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
